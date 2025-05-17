@@ -23,5 +23,11 @@ int main(void) {
     } else if (imc >= 30.0) {
         printf("Condición: Obesidad\n");
     }
+    printf("\n%-10s| %-15s\n", "Índice", "Condición");
+    printf("-----------------------------\n");
+    printf("<18.5     | Bajo peso\n");
+    printf("18.5-24.9 | Normal\n");
+    printf("25.0-29.9 | Sobrepeso\n");
+    printf(">=30      | Obesidad\n");
     return 0;
 }
