@@ -1,2 +1,27 @@
 # bmicalculadora
 Legajo:417062 Estudiante: Pucheta Benjamin
+#include <stdio.h>
+
+int main(void) {
+    float p, a, A, imc;
+
+    printf("Ingrese su peso: ");
+    scanf("%f", &p);
+    printf("Ingrese su altura en cm: ");
+    scanf("%f", &a);
+    A = a/100;
+    imc = p / (A * A);
+
+    printf("Su índice de masa corporal es: %.2f\n", imc);
+
+    if (imc < 18.5) {
+        printf("Condición: Bajo peso\n");
+    } else if (imc >= 18.5 && imc <= 24.9) {
+        printf("Condición: Normal\n");
+    } else if (imc >= 25.0 && imc <= 29.9) {
+        printf("Condición: Sobrepeso\n");
+    } else if (imc >= 30.0) {
+        printf("Condición: Obesidad\n");
+    }
+    return 0;
+}
