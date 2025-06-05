@@ -1,5 +1,6 @@
 # bmicalculadora
 Legajo:417062 Estudiante: Pucheta Benjamin
+
 #include <stdio.h>
 
 int main(void) {
@@ -30,4 +31,5 @@ int main(void) {
     printf("25.0-29.9 | Sobrepeso\n");
     printf(">=30      | Obesidad\n");
     return 0;
+//Al parecer ya lo habia hecho al codigo diculpa profe
 }
