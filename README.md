@@ -5,10 +5,14 @@ Legajo:417062 Estudiante: Pucheta Benjamin
 int main(void) {
     float p, a, A, imc;
 
-    printf("Ingrese su peso: ");
-    scanf("%f", &p);
-    printf("Ingrese su altura en cm: ");
-    scanf("%f", &a);
+do {printf("Ingrese su peso: ");
+scanf("%f", &p);
+if(p<0) printf("vuelve a intentarlo\n");
+}while(p<0);
+do {printf("Ingrese su altura en cm: ");
+scanf("%f", &a);
+if(a<0) printf("vuelve a intentarlo\n");
+}while(a<0);
     A = a/100;
     imc = p / (A * A);
 
